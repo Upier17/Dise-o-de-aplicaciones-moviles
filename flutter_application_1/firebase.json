@@ -1,0 +1,45 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "pokedex-cf849",
+          "appId": "1:1090021950067:android:177f0bf587430f4395a006",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "pokedex-cf849",
+          "configurations": {
+            "android": "1:1090021950067:android:177f0bf587430f4395a006",
+            "ios": "1:1090021950067:ios:0e86e6e8c66b8f3495a006",
+            "macos": "1:1090021950067:ios:0e86e6e8c66b8f3495a006",
+            "web": "1:1090021950067:web:9a90a62cb274c10395a006",
+            "windows": "1:1090021950067:web:be09b3d1e6d3a3b695a006"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "database": "(default)",
+    "location": "nam5",
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
